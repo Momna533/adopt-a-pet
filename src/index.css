@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --Lavender: #e6e6fa; /*bg*/
+  --Lilac: #c8a2c8; /*bg*/
+  --Violet: #8a2be2;
+  --orchid: #da70d6;
+  --plum: #dda0dd; /**/
+  --mauve: #e0b0ff; /*bg*/
+  --indigo: #4b0082; /**/
+  --amethyst: #9966cc;
+  --purple: #800080;
+  --magenta: #ff00ff;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  color: var(--indigo);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--mauve);
+}
