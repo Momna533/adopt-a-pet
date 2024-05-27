@@ -25,10 +25,12 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.75em 1.75em;
+  flex-wrap: wrap;
 }
 .logo {
+  flex: 1;
   font-family: "Satisfy", sans-serif;
   font-size: 2em;
   text-decoration: none;
@@ -40,6 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.25em;
+  flex-wrap: wrap;
 }
 .header form input {
   border: 1px solid var(--Violet);
@@ -61,9 +64,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3.75em;
   padding: 0.25em 1.75em;
   background-color: var(--Violet);
+  flex-wrap: wrap;
 }
 .nav a {
   text-decoration: none;
@@ -137,6 +140,17 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+/* .pets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75em;
+  padding: 2em;
+} */
+h2 {
+  text-align: center;
+}
 .pets__catalog {
   display: flex;
   align-items: center;
@@ -166,5 +180,5 @@ h2 {
   border-radius: 15px;
 }
 .single__pet__card {
-  padding: 2em;
+  padding: 1em;
 }
