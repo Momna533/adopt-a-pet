@@ -1,15 +1,15 @@
-import Pets from "../components/Pets";
 import Hero from "../components/Hero";
-import data from "../data";
 import { Link } from "react-router-dom";
+import Pets from "../components/Pets";
+import data from "../data";
 const Home = () => {
   return (
     <>
-      <Hero title={"Find Your perfect Pet"} />
+      <Hero title={"Find Your perfect Pet"} bgImg="homeImg" />
       <Pets pets={"pets"}>
         {data.map((pet, index) => {
           return (
-            <Link className="pet__card" key={index} to={`/${pet.name}`}>
+            <Link className="pet__card" key={index} to={`${pet.name}`}>
               <div className="pet__card__img">
                 <img src={pet.image} alt={pet.name} />
               </div>

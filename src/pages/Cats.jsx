@@ -8,7 +8,7 @@ const Cats = () => {
   const cats = pets.filter((pet) => pet.category === "cat");
   return (
     <>
-      <Hero title={"Cats"} />
+      <Hero title={"Cats"} bgImg="catsBg" />
       <Pets pets={"cats"}>
         {cats.map((pet, index) => {
           return (

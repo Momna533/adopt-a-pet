@@ -8,11 +8,11 @@ const Rabbits = () => {
   const rabbits = pets.filter((pet) => pet.category === "rabbit");
   return (
     <>
-      <Hero title={"Rabbits"} />
+      <Hero title={"Rabbits"} bgImg="rabbitsBg" />
       <Pets pets={"rabbits"}>
         {rabbits.map((pet, index) => {
           return (
-            <Link className="pet__card" key={index} to={`/rabbits/${pet.name}`}>
+            <Link className="pet__card" key={index} to={`/${pet.name}`}>
               <div className="pet__card__img">
                 <img src={pet.image} alt={pet.name} />
               </div>

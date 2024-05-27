@@ -82,13 +82,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--Lavender);
+  min-height: 50vh;
+  text-align: center;
+}
+.homeImg {
   background: url("./assets/photo-1525983360072-2ebda055ba40.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: var(--Lavender);
-  min-height: 50vh;
-  text-align: center;
+}
+.catsBg {
+  background: url("https://plus.unsplash.com/premium_photo-1664371674770-2fe1839c469b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2lybCUyMHdpdGglMjBjYXR8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dogsBg {
+  background: url("https://images.unsplash.com/photo-1605001011156-cbf0b0f67a51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybCUyMHdpdGglMjBkb2d8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rabbitsBg {
+  background: url("https://images.unsplash.com/photo-1533514114760-4389f572ae26?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybCUyMHdpdGglMjByYWJiaXR8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero::before {
   content: "";
@@ -122,22 +142,29 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 0.75em;
 }
-.pet__card {
+.pet__card,
+.single__pet__card {
   display: flex;
   flex-direction: column;
-  max-width: 370px;
+  max-width: 220px;
 }
-.pet__card__img {
-  background-color: darkblue;
+.pet__card__img,
+.single__pet__card__img {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 300px;
 }
-.pet__card__img img {
+.pet__card__img img,
+.single__pet__card__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
+}
+.single__pet__card {
+  padding: 2em;
 }

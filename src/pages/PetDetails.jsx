@@ -2,16 +2,15 @@ import { useParams } from "react-router-dom";
 import data from "../data";
 import Hero from "../components/Hero";
 
-const SinglePet = () => {
+const PetDetails = () => {
   const { id } = useParams();
-  console.log(id);
   const pet = data.find((pet) => pet.name === id);
   const { name, gender, image } = pet;
   return (
     <>
-      <Hero title={id} />
-      <div className="pet__card">
-        <div className="pet__card__img">
+      <Hero title={name} bgImg="homeImg" />
+      <div className="single__pet__card">
+        <div className="single__pet__card__img">
           <img src={image} alt={name} />
         </div>
         <h3>{name}</h3>
@@ -21,4 +20,4 @@ const SinglePet = () => {
   );
 };
 
-export default SinglePet;
+export default PetDetails;
